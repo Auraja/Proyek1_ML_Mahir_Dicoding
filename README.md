@@ -131,7 +131,7 @@ Data preparation ini terdiri dari beberapa langkah berikut:
 
 Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dari nilai-nilai kategorikal menjadi data yang dapat diproses oleh model machine learning. Dengan melakukannya, mempersiapkan dataset untuk analisis lebih lanjut atau pembangunan model prediksi, dengan menghilangkan nilai yang tidak relevan atau ambigu serta mengubah nilai-nilai kategorikal menjadi format yang dapat dimengerti oleh model.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/4bd59409-e80e-482f-bf0e-4fa5e76d0da4)
+![image](https://github.com/Auraja/test-md/assets/116571074/4bd59409-e80e-482f-bf0e-4fa5e76d0da4)         
 Data preparation ini terdiri dari langkah-langkah sebagai berikut:
 
 1. Memisahkan Fitur dan Target: Data dipisahkan menjadi dua bagian: fitur (X_temp) dan target (y). Fitur adalah semua kolom dalam data kecuali kolom 'stroke', sedangkan target adalah kolom 'stroke' itu sendiri. Ini penting karena dalam machine learning, memisahkan variabel target yang akan diprediksi dari fitur yang digunakan untuk melakukan prediksi.
@@ -156,8 +156,8 @@ Random Forest Classifier
 ![image](https://github.com/Auraja/test-md/assets/116571074/b9954dde-c26f-441b-88ce-9c058c72be39)
 Decision Tree Classifier
 
-Hasil metric kedua algoritma cenderung sama, maka pengukuran di ubah menjadi menggunakan waktu eksekusi model dengan hasil berikut:
-![image](https://github.com/Auraja/test-md/assets/116571074/275e8d6e-ceab-45bf-b55a-c994888881ab)
+Hasil metric kedua algoritma cenderung sama, maka pengukuran di ubah menjadi menggunakan waktu eksekusi model dengan hasil berikut:   
+![image](https://github.com/Auraja/test-md/assets/116571074/275e8d6e-ceab-45bf-b55a-c994888881ab)            
 Dari data yang diberikan, terdapat dua algoritma yang dievaluasi:
 1. RandomForestClassifier dengan skor 0.96 dan waktu eksekusi 1.155 detik.
 2. DecisionTreeClassifier dengan skor 0.96 dan waktu eksekusi 0.008 detik.
