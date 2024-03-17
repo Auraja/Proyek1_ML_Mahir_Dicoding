@@ -60,8 +60,12 @@ Obat-obatan dan terapi rehabilitasi dapat membantu penyintas stroke untuk kembal
 Kesadaran masyarakat tentang stroke harus ditingkatkan.
 Masyarakat harus di edukasi tentang tanda-tanda dan gejala stroke, serta cara pencegahan dan pengobatannya.
 
-[Kementerian Kesehatan Republik Indonesia. (2023). Stroke.] (https://p2ptm.kemkes.go.id/infographic-p2ptm/stroke/apa-itu-stroke)
-[Ikatan Dokter Indonesia. (2023). Stroke.] (https://www.ahajournals.org/doi/abs/10.1161/STR.0000000000000430)
+Referensi yang di gunakan :                                        
+[Kementerian Kesehatan Republik Indonesia. (2023). Stroke.] (https://p2ptm.kemkes.go.id/infographic-p2ptm/stroke/apa-itu-stroke)      
+[Ikatan Dokter Indonesia. (2023). Stroke.] (https://www.ahajournals.org/doi/abs/10.1161/STR.0000000000000430)                      
+[World Health Organization. (2023). Stroke.] (https://www.emro.who.int/health-topics/stroke-cerebrovascular-accident/index.html)     
+[World Health Organization. (2022). The global burden of stroke.] (https://pubmed.ncbi.nlm.nih.gov/29791947/)      
+[World Health Organization. (2021). Fact sheets: Stroke.] (https://www.world-stroke.org/assets/downloads/WSO_Global_Stroke_Fact_Sheet.pdf)
 
 ## Business Understanding
 
@@ -77,15 +81,13 @@ Bagian laporan ini mencakup:
 - Melakukan pra-pemrosesan data dengan baik agar dapat digunakan dalam pembuatan model machine learning. Ini mencakup langkah-langkah seperti penanganan nilai-nilai yang hilang, normalisasi fitur, dan pemrosesan transform data.
 - Mengetahui dan menerapkan berbagai teknik dan algoritma machine learning untuk membuat model yang dapat memprediksi penyakit stroke pada manusia. Ini melibatkan pemilihan fitur, pemilihan model, pelatihan model, dan evaluasi kinerja model.
 
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
-
 ### Solution statements
 Solution Statements
--Menggunakan Random Forest Classifier: Kami akan menerapkan algoritma Random Forest Classifier untuk memprediksi penyakit stroke. Kami akan melakukan prapemrosesan data yang tepat, termasuk penanganan nilai-nilai yang hilang dan penskalaan fitur. Kami akan melakukan pelatihan model menggunakan Random Forest Classifier dengan parameter default, dan kemudian melakukan evaluasi kinerja model menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score.
+-Menggunakan Random Forest Classifier: Menerapkan algoritma Random Forest Classifier untuk memprediksi penyakit stroke. Melakukan prapemrosesan data yang tepat, termasuk penanganan nilai-nilai yang hilang dan penskalaan fitur. Melakukan pelatihan model menggunakan Random Forest Classifier dengan parameter default, dan kemudian melakukan evaluasi kinerja model menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score.
 
--Menggunakan Decision Tree Classifier: Kami akan menerapkan algoritma Decision Tree Classifier untuk memprediksi penyakit stroke. Sama seperti sebelumnya, kami akan melakukan prapemrosesan data yang sesuai dan pelatihan model menggunakan Decision Tree Classifier dengan parameter default. Setelah itu, kami akan mengevaluasi kinerja model menggunakan metrik evaluasi yang sama seperti pada solusi sebelumnya.
+-Menggunakan Decision Tree Classifier: Menerapkan algoritma Decision Tree Classifier untuk memprediksi penyakit stroke. Sama seperti sebelumnya, Melakukan prapemrosesan data yang sesuai dan pelatihan model menggunakan Decision Tree Classifier dengan parameter default. Setelah itu, Mengevaluasi kinerja model menggunakan metrik evaluasi yang sama seperti pada solusi sebelumnya.
 
--Perbandingan Antara Random Forest dan Decision Tree: Kami akan membandingkan kinerja kedua model yang telah dibangun (Random Forest Classifier dan Decision Tree Classifier). Kami akan menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score untuk menentukan model mana yang memberikan hasil terbaik dalam memprediksi penyakit stroke. Perbandingan ini akan membantu kami memilih model terbaik untuk tujuan prediksi yang akurat.
+-Perbandingan Antara Random Forest dan Decision Tree: Membandingkan kinerja kedua model yang telah dibangun (Random Forest Classifier dan Decision Tree Classifier). Menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score untuk menentukan model mana yang memberikan hasil terbaik dalam memprediksi penyakit stroke. Perbandingan ini akan membantu  memilih model terbaik untuk tujuan prediksi yang akurat.
 
 ## Data Understanding
 Dataset yang digunakan pada proyek kali ini terdiri dari 5110baris dan 12 kolom dengan judul [Stroke Prediction Dataset] (https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)
@@ -111,10 +113,10 @@ Visualisasi ini menampilkan tiga jenis plot untuk setiap kolom numerik dalam dat
 ![image](https://github.com/Auraja/test-md/assets/116571074/ecd76e21-d138-4021-8dc5-539e30a384e7)
 ![image](https://github.com/Auraja/test-md/assets/116571074/67390e5e-2b6a-46d8-aeda-0438b9707fca)
 ![image](https://github.com/Auraja/test-md/assets/116571074/3baacfaf-db17-4863-8465-570a919ad6cd)
-Visualisasi ini menampilkan dua plot untuk masing-masing kolom kategorikal dalam dataset. Setiap plot menggunakan countplot untuk menampilkan jumlah frekuensi masing-masing kategori dalam kolom yang ditampilkan. Tujuannya adalah untuk memberikan pemahaman tentang distribusi data dalam setiap kolom kategorikal. Dengan visualisasi ini, kita dapat melihat seberapa seimbang atau tidak seimbangnya distribusi kategori dalam setiap fitur kategorikal, yang dapat memberikan wawasan tentang kecenderungan atau pola dalam data.
+Visualisasi ini menampilkan dua plot untuk masing-masing kolom kategorikal dalam dataset. Setiap plot menggunakan countplot untuk menampilkan jumlah frekuensi masing-masing kategori dalam kolom yang ditampilkan. Tujuannya adalah untuk memberikan pemahaman tentang distribusi data dalam setiap kolom kategorikal. Dengan visualisasi ini, dapat melihat seberapa seimbang atau tidak seimbangnya distribusi kategori dalam setiap fitur kategorikal, yang dapat memberikan wawasan tentang kecenderungan atau pola dalam data.
 
 ![image](https://github.com/Auraja/test-md/assets/116571074/60c32213-a388-47ff-b1a4-6ade8755085d)
-Visualisasi ini adalah diagram lingkaran yang menunjukkan proporsi pasien yang mengalami stroke (stroke=1) dan yang tidak (stroke=0) dalam dataset. Tujuannya adalah untuk memberikan gambaran visual tentang seberapa sering stroke terjadi dalam sampel data. Dengan ini, kita dapat mengevaluasi seimbangnya distribusi kelas target dan memahami tingkat keparahan masalah stroke dalam dataset.
+Visualisasi ini adalah diagram lingkaran yang menunjukkan proporsi pasien yang mengalami stroke (stroke=1) dan yang tidak (stroke=0) dalam dataset. Tujuannya adalah untuk memberikan gambaran visual tentang seberapa sering stroke terjadi dalam sampel data. Dengan ini, dapat mengevaluasi seimbangnya distribusi kelas target dan memahami tingkat keparahan masalah stroke dalam dataset.
 
 ## Data Preparation
 ![image](https://github.com/Auraja/test-md/assets/116571074/7dc10464-6958-4a5a-b155-35e0c187a20a)
@@ -127,18 +129,18 @@ Data preparation ini terdiri dari beberapa langkah berikut:
    
 3. Pembersihan Data: Setelah itu, data dibersihkan dengan menghapus baris yang memiliki nilai 'gender' yang sama dengan 2 (yang mewakili kategori 'Other'). Ini mungkin dilakukan karena kategori 'Other' memiliki nilai yang tidak dapat dipetakan secara jelas dalam konteks nilai numerik yang ditentukan sebelumnya.
 
-Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dari nilai-nilai kategorikal menjadi data yang dapat diproses oleh model machine learning. Dengan melakukannya, kita mempersiapkan dataset untuk analisis lebih lanjut atau pembangunan model prediksi, dengan menghilangkan nilai yang tidak relevan atau ambigu serta mengubah nilai-nilai kategorikal menjadi format yang dapat dimengerti oleh model.
+Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dari nilai-nilai kategorikal menjadi data yang dapat diproses oleh model machine learning. Dengan melakukannya, mempersiapkan dataset untuk analisis lebih lanjut atau pembangunan model prediksi, dengan menghilangkan nilai yang tidak relevan atau ambigu serta mengubah nilai-nilai kategorikal menjadi format yang dapat dimengerti oleh model.
 
 ![image](https://github.com/Auraja/test-md/assets/116571074/4bd59409-e80e-482f-bf0e-4fa5e76d0da4)
 Data preparation ini terdiri dari langkah-langkah sebagai berikut:
 
-1. Memisahkan Fitur dan Target: Data dipisahkan menjadi dua bagian: fitur (X_temp) dan target (y). Fitur adalah semua kolom dalam data kecuali kolom 'stroke', sedangkan target adalah kolom 'stroke' itu sendiri. Ini penting karena dalam machine learning, kita memisahkan variabel target yang akan diprediksi dari fitur yang digunakan untuk melakukan prediksi.
+1. Memisahkan Fitur dan Target: Data dipisahkan menjadi dua bagian: fitur (X_temp) dan target (y). Fitur adalah semua kolom dalam data kecuali kolom 'stroke', sedangkan target adalah kolom 'stroke' itu sendiri. Ini penting karena dalam machine learning, memisahkan variabel target yang akan diprediksi dari fitur yang digunakan untuk melakukan prediksi.
    
 2. Normalisasi Fitur: Fitur-fitur dalam X_temp dinormalisasi menggunakan MinMaxScaler. Normalisasi dilakukan untuk mengubah rentang nilai setiap fitur sehingga memiliki rentang antara 0 dan 1. Hal ini membantu dalam meningkatkan kinerja model machine learning.
    
 3. Membuat DataFrame Baru untuk Fitur: Hasil normalisasi disimpan dalam DataFrame baru yang disebut X. DataFrame ini berisi fitur-fitur yang sudah dinormalisasi, dengan nama kolom yang sama seperti di X_temp.
 
-Tujuan dari langkah ini adalah untuk mempersiapkan data yang siap digunakan untuk proses pembelajaran mesin. Dengan melakukan normalisasi, kita memastikan bahwa semua fitur memiliki skala yang seragam, yang dapat membantu meningkatkan kinerja model dan mempercepat konvergensi algoritma pembelajaran mesin.
+Tujuan dari langkah ini adalah untuk mempersiapkan data yang siap digunakan untuk proses pembelajaran mesin. Dengan melakukan normalisasi, memastikan bahwa semua fitur memiliki skala yang seragam, yang dapat membantu meningkatkan kinerja model dan mempercepat konvergensi algoritma pembelajaran mesin.
 
 
 ## Modeling
@@ -159,7 +161,7 @@ Hasil metric kedua algoritma cenderung sama, maka pengukuran di ubah menjadi men
 Dari data yang diberikan, terdapat dua algoritma yang dievaluasi:
 1. RandomForestClassifier dengan skor 0.96 dan waktu eksekusi 1.155 detik.
 2. DecisionTreeClassifier dengan skor 0.96 dan waktu eksekusi 0.008 detik.
-Kedua algoritma ini memiliki skor akurasi yang sama, yaitu 0.96. Namun, jika kita mempertimbangkan waktu eksekusi, DecisionTreeClassifier jauh lebih cepat dibandingkan dengan RandomForestClassifier. Dengan demikian, berdasarkan kriteria waktu eksekusi yang lebih rendah, DecisionTreeClassifier dapat dipilih sebagai algoritma terbaik dalam hal kinerja waktu.
+Kedua algoritma ini memiliki skor akurasi yang sama, yaitu 0.96. Namun, jika mempertimbangkan waktu eksekusi, DecisionTreeClassifier jauh lebih cepat dibandingkan dengan RandomForestClassifier. Dengan demikian, berdasarkan kriteria waktu eksekusi yang lebih rendah, DecisionTreeClassifier dapat dipilih sebagai algoritma terbaik dalam hal kinerja waktu.
 
 ## Evaluation
 Metric evaluasi yang digunakan adalah akurasi pada model yang digunakan dan waktu eksekusi proses pelatihan model
