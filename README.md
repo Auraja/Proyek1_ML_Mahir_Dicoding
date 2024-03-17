@@ -160,13 +160,18 @@ Metric evaluasi yang digunakan adalah akurasi pada model yang digunakan dan wakt
 
 1. Akurasi:
 Akurasi mengukur proporsi data yang diklasifikasikan dengan benar oleh model.
+
 Rumus:
+
 Akurasi = (Jumlah Prediksi Benar / Jumlah Data) x 100%
+
 y_pred_tree: Prediksi kelas untuk data pengujian oleh DecisionTreeClassifier.
+
 tree.score(X_test, y_test): Fungsi untuk menghitung akurasi model.
+
 tree_score: Variabel yang menyimpan nilai akurasi.
 
-2. Waktu pelatihan:
+3. Waktu pelatihan:
 Metrik ini mengukur waktu yang dibutuhkan model untuk dilatih pada data.
 
 Rumus:
