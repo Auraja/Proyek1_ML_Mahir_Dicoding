@@ -82,7 +82,9 @@ Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pe
 ### Solution statements
 Solution Statements
 -Menggunakan Random Forest Classifier: Kami akan menerapkan algoritma Random Forest Classifier untuk memprediksi penyakit stroke. Kami akan melakukan prapemrosesan data yang tepat, termasuk penanganan nilai-nilai yang hilang dan penskalaan fitur. Kami akan melakukan pelatihan model menggunakan Random Forest Classifier dengan parameter default, dan kemudian melakukan evaluasi kinerja model menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score.
+
 -Menggunakan Decision Tree Classifier: Kami akan menerapkan algoritma Decision Tree Classifier untuk memprediksi penyakit stroke. Sama seperti sebelumnya, kami akan melakukan prapemrosesan data yang sesuai dan pelatihan model menggunakan Decision Tree Classifier dengan parameter default. Setelah itu, kami akan mengevaluasi kinerja model menggunakan metrik evaluasi yang sama seperti pada solusi sebelumnya.
+
 -Perbandingan Antara Random Forest dan Decision Tree: Kami akan membandingkan kinerja kedua model yang telah dibangun (Random Forest Classifier dan Decision Tree Classifier). Kami akan menggunakan metrik evaluasi seperti akurasi, presisi, recall, dan F1-score untuk menentukan model mana yang memberikan hasil terbaik dalam memprediksi penyakit stroke. Perbandingan ini akan membantu kami memilih model terbaik untuk tujuan prediksi yang akurat.
 
 ## Data Understanding
@@ -120,7 +122,9 @@ Visualisasi ini adalah diagram lingkaran yang menunjukkan proporsi pasien yang m
 Data preparation ini terdiri dari beberapa langkah berikut:
 
 1. Mapping Nilai Kategorikal ke Numerik: Pada bagian pertama kode, setiap kolom kategorikal dalam columns_temp dipetakan ke nilai numerik. Misalnya, untuk kolom 'gender', nilai 'Male' dipetakan ke 0, 'Female' ke 1, dan 'Other' ke 2. Ini membantu mengubah data kategorikal menjadi format yang dapat diproses oleh model machine learning.
+   
 2. Penggantian Nilai Kategorikal: Setelah mapping, setiap kolom dalam DataFrame data_2 diganti dengan nilai numerik sesuai dengan mapping yang ditentukan sebelumnya. Misalnya, 'Yes' dalam kolom 'ever_married' diganti dengan 0 dan 'No' dengan Hal yang sama dilakukan untuk kolom 'work_type', 'smoking_status', dan 'Residence_type'.
+   
 3. Pembersihan Data: Setelah itu, data dibersihkan dengan menghapus baris yang memiliki nilai 'gender' yang sama dengan 2 (yang mewakili kategori 'Other'). Ini mungkin dilakukan karena kategori 'Other' memiliki nilai yang tidak dapat dipetakan secara jelas dalam konteks nilai numerik yang ditentukan sebelumnya.
 
 Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dari nilai-nilai kategorikal menjadi data yang dapat diproses oleh model machine learning. Dengan melakukannya, kita mempersiapkan dataset untuk analisis lebih lanjut atau pembangunan model prediksi, dengan menghilangkan nilai yang tidak relevan atau ambigu serta mengubah nilai-nilai kategorikal menjadi format yang dapat dimengerti oleh model.
@@ -129,7 +133,9 @@ Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dar
 Data preparation ini terdiri dari langkah-langkah sebagai berikut:
 
 1. Memisahkan Fitur dan Target: Data dipisahkan menjadi dua bagian: fitur (X_temp) dan target (y). Fitur adalah semua kolom dalam data kecuali kolom 'stroke', sedangkan target adalah kolom 'stroke' itu sendiri. Ini penting karena dalam machine learning, kita memisahkan variabel target yang akan diprediksi dari fitur yang digunakan untuk melakukan prediksi.
+   
 2. Normalisasi Fitur: Fitur-fitur dalam X_temp dinormalisasi menggunakan MinMaxScaler. Normalisasi dilakukan untuk mengubah rentang nilai setiap fitur sehingga memiliki rentang antara 0 dan 1. Hal ini membantu dalam meningkatkan kinerja model machine learning.
+   
 3. Membuat DataFrame Baru untuk Fitur: Hasil normalisasi disimpan dalam DataFrame baru yang disebut X. DataFrame ini berisi fitur-fitur yang sudah dinormalisasi, dengan nama kolom yang sama seperti di X_temp.
 
 Tujuan dari langkah ini adalah untuk mempersiapkan data yang siap digunakan untuk proses pembelajaran mesin. Dengan melakukan normalisasi, kita memastikan bahwa semua fitur memiliki skala yang seragam, yang dapat membantu meningkatkan kinerja model dan mempercepat konvergensi algoritma pembelajaran mesin.
