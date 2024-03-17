@@ -190,7 +190,7 @@ t2: Waktu akhir pelatihan model.
 
 delta_tree: Variabel yang menyimpan waktu pelatihan dalam detik.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/c0822063-2c35-4e5c-8675-6a04e412e9fa)
+![image](https://github.com/Auraja/test-md/assets/116571074/084d5f0e-cfd7-43cd-b619-a82a86fac732)
 Kedua model, RandomForestClassifier dan DecisionTreeClassifier, memiliki skor akurasi yang sama, yaitu 0.96. Namun, model DecisionTreeClassifier memiliki waktu eksekusi yang jauh lebih cepat dibandingkan RandomForestClassifier. Dengan Delta_t hanya 0.008 detik, model DecisionTreeClassifier mungkin lebih efisien dalam penggunaan sumber daya komputasi.
 
 
