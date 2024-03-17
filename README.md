@@ -177,7 +177,7 @@ tree.score(X_test, y_test): Fungsi untuk menghitung akurasi model.
 
 tree_score: Variabel yang menyimpan nilai akurasi.
 
-3. Waktu pelatihan:
+2. Waktu pelatihan:
 Metrik ini mengukur waktu yang dibutuhkan model untuk dilatih pada data.
 
 Rumus:
