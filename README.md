@@ -106,21 +106,23 @@ Dataset yang digunakan pada proyek kali ini terdiri dari 5110baris dan 12 kolom 
 11) smoking_status: "Pernah Merokok", "Tidak Pernah Merokok", "Merokok", atau "Status Merokok Tidak Diketahui"
 12) stroke: 1 jika pasien telah mengalami stroke atau 0 jika tidak
     
-![image](https://github.com/Auraja/test-md/assets/116571074/6ac5c42d-cec5-4c55-b7f0-fb9392d53aa0)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/d1bbaba6-2aed-41d3-8a41-bc1c08cc6484)
 Visualisasi ini menampilkan tiga jenis plot untuk setiap kolom numerik dalam dataset: KDE Plot, Boxplot, dan Scatterplot. KDE Plot menampilkan distribusi probabilitas variabel numerik, memisahkan antara kelompok yang mengalami stroke dan yang tidak. Boxplot menunjukkan statistik deskriptif dan outlier variabel numerik, juga memisahkan berdasarkan nilai target 'stroke'. Scatterplot menunjukkan hubungan antara variabel numerik dan variabel target 'stroke'. Tujuannya adalah untuk memahami distribusi data, perbedaan statistik, dan hubungan antara variabel numerik dan kemungkinan terjadinya stroke.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/2e02cb9c-dc60-4f37-8ea6-df68bef10d34)
-![image](https://github.com/Auraja/test-md/assets/116571074/ecd76e21-d138-4021-8dc5-539e30a384e7)
-![image](https://github.com/Auraja/test-md/assets/116571074/67390e5e-2b6a-46d8-aeda-0438b9707fca)
-![image](https://github.com/Auraja/test-md/assets/116571074/3baacfaf-db17-4863-8465-570a919ad6cd)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/625d7c5b-31be-44a3-97f9-f77e9d5530be)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/74aff240-7940-4161-ad88-882c73266f44)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/925bde0f-2c5c-4b9c-9c16-ccd768c84b0a)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/a9f68d7e-b9cf-4fc5-93be-a69604d9b2d6)
+
 Visualisasi ini menampilkan dua plot untuk masing-masing kolom kategorikal dalam dataset. Setiap plot menggunakan countplot untuk menampilkan jumlah frekuensi masing-masing kategori dalam kolom yang ditampilkan. Tujuannya adalah untuk memberikan pemahaman tentang distribusi data dalam setiap kolom kategorikal. Dengan visualisasi ini, dapat melihat seberapa seimbang atau tidak seimbangnya distribusi kategori dalam setiap fitur kategorikal, yang dapat memberikan wawasan tentang kecenderungan atau pola dalam data.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/60c32213-a388-47ff-b1a4-6ade8755085d)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/9f3b0881-098b-4ad6-97e7-3c7ee60d29d6)
 Visualisasi ini adalah diagram lingkaran yang menunjukkan proporsi pasien yang mengalami stroke (stroke=1) dan yang tidak (stroke=0) dalam dataset. Tujuannya adalah untuk memberikan gambaran visual tentang seberapa sering stroke terjadi dalam sampel data. Dengan ini, dapat mengevaluasi seimbangnya distribusi kelas target dan memahami tingkat keparahan masalah stroke dalam dataset.
 
 ## Data Preparation
-![image](https://github.com/Auraja/test-md/assets/116571074/7dc10464-6958-4a5a-b155-35e0c187a20a)
-![image](https://github.com/Auraja/test-md/assets/116571074/6391978e-dc03-4580-a6ec-a66958214114)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/7d9942cc-2706-470e-912d-eb25212f71b6)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/018e5486-faff-4643-ba43-e073ab13ba30)
+
 Data preparation ini terdiri dari beberapa langkah berikut:
 
 1. Mapping Nilai Kategorikal ke Numerik: Pada bagian pertama kode, setiap kolom kategorikal dalam columns_temp dipetakan ke nilai numerik. Misalnya, untuk kolom 'gender', nilai 'Male' dipetakan ke 0, 'Female' ke 1, dan 'Other' ke 2. Ini membantu mengubah data kategorikal menjadi format yang dapat diproses oleh model machine learning.
@@ -131,7 +133,7 @@ Data preparation ini terdiri dari beberapa langkah berikut:
 
 Tujuan dari langkah-langkah ini adalah untuk mengubah data awal yang terdiri dari nilai-nilai kategorikal menjadi data yang dapat diproses oleh model machine learning. Dengan melakukannya, mempersiapkan dataset untuk analisis lebih lanjut atau pembangunan model prediksi, dengan menghilangkan nilai yang tidak relevan atau ambigu serta mengubah nilai-nilai kategorikal menjadi format yang dapat dimengerti oleh model.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/4bd59409-e80e-482f-bf0e-4fa5e76d0da4)         
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/73be564c-53f6-47d8-af1d-185e188b3ab7)
 Data preparation ini terdiri dari langkah-langkah sebagai berikut:
 
 1. Memisahkan Fitur dan Target: Data dipisahkan menjadi dua bagian: fitur (X_temp) dan target (y). Fitur adalah semua kolom dalam data kecuali kolom 'stroke', sedangkan target adalah kolom 'stroke' itu sendiri. Ini penting karena dalam machine learning, memisahkan variabel target yang akan diprediksi dari fitur yang digunakan untuk melakukan prediksi.
@@ -151,13 +153,13 @@ Kelebihan dari Random Forest Classifier antara lain kinerja yang tinggi, kemampu
 Model kedua menggunakan algoritma Decision Tree Classifier dengan GridSearchCV untuk melakukan penyetelan hiperparameter. GridSearchCV digunakan untuk mencari kombinasi terbaik dari parameter-parameter yang telah ditentukan sebelumnya. Setelah mendapatkan parameter terbaik, model Decision Tree dilatih ulang menggunakan parameter tersebut. Setelah pelatihan, model dievaluasi menggunakan data uji, dan akurasinya dicetak. Selain itu, waktu eksekusi model juga diukur sebelum dan sesudah pelatihan untuk memperoleh estimasi durasi pelatihan.
 Kelebihan dari Decision Tree Classifier antara lain interpretasi yang mudah, tidak memerlukan normalisasi, dan kemampuan menangani fitur kategorikal. Namun, kekurangannya termasuk rentan terhadap overfitting dan kehilangan informasi pada kedalaman pohon yang besar.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/b494ecf3-aeed-44b2-92f9-df0cfcd0c30f)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/eb1b5cc9-cd8b-4c70-83b3-7ea384c7930c)
 Random Forest Classifier
-![image](https://github.com/Auraja/test-md/assets/116571074/b9954dde-c26f-441b-88ce-9c058c72be39)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/5b4a120b-64d4-4a73-8e02-a754bd32e36b)
 Decision Tree Classifier
 
 Hasil metric kedua algoritma cenderung sama, maka pengukuran di ubah menjadi menggunakan waktu eksekusi model dengan hasil berikut:   
-![image](https://github.com/Auraja/test-md/assets/116571074/275e8d6e-ceab-45bf-b55a-c994888881ab)            
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/74d28ac4-4874-4122-b7cb-6171b83f198b)
 Dari data yang diberikan, terdapat dua algoritma yang dievaluasi:
 1. RandomForestClassifier dengan skor 0.96 dan waktu eksekusi 1.155 detik.
 2. DecisionTreeClassifier dengan skor 0.96 dan waktu eksekusi 0.008 detik.
@@ -192,7 +194,7 @@ t2: Waktu akhir pelatihan model.
 
 delta_tree: Variabel yang menyimpan waktu pelatihan dalam detik.
 
-![image](https://github.com/Auraja/test-md/assets/116571074/084d5f0e-cfd7-43cd-b619-a82a86fac732)
+![image](https://github.com/Auraja/Proyek1_ML_Mahir_Dicoding/assets/116571074/93bff0fc-b661-48d8-8491-ebdba23308f7)
 Kedua model, RandomForestClassifier dan DecisionTreeClassifier, memiliki skor akurasi yang sama, yaitu 0.96. Namun, model DecisionTreeClassifier memiliki waktu eksekusi yang jauh lebih cepat dibandingkan RandomForestClassifier. Dengan Delta_t hanya 0.008 detik, model DecisionTreeClassifier mungkin lebih efisien dalam penggunaan sumber daya komputasi.
 
 
