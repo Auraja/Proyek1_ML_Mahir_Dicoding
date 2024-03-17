@@ -168,10 +168,15 @@ tree_score: Variabel yang menyimpan nilai akurasi.
 
 2. Waktu pelatihan:
 Metrik ini mengukur waktu yang dibutuhkan model untuk dilatih pada data.
+
 Rumus:
+
 Waktu Pelatihan = Waktu Akhir - Waktu Awal
+
 t1: Waktu awal pelatihan model.
+
 t2: Waktu akhir pelatihan model.
+
 delta_tree: Variabel yang menyimpan waktu pelatihan dalam detik.
 
 ![image](https://github.com/Auraja/test-md/assets/116571074/c0822063-2c35-4e5c-8675-6a04e412e9fa)
